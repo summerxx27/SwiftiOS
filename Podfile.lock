@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (3.4.1)
+  - HanekeSwift (0.10.1)
+  - MJExtension (3.0.10)
+  - SnapKit (0.30.0.beta2)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - HanekeSwift
+  - MJExtension (~> 3.0.10)
+  - SnapKit (~> 0.30.0.beta2)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  SnapKit: c4bb32b1d3c5d18ff63bf95ffcbc599d2bab964c
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
