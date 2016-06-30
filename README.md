@@ -1,7 +1,7 @@
 # SwiftiOS
 一个用Swift编写的项目
-
-### 已经能看到的部分
+会逐渐加入更加丰富的内容, 欢迎Star.
+###### 已经能看到的部分
 
 - 自定义Tabbar
 - Tableview的使用, 自定义cell
