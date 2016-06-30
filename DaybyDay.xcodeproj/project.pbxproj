@@ -34,11 +34,17 @@
 		BC3475E41D22297A00CA45FC /* tabbar_compose_button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3475E21D22297A00CA45FC /* tabbar_compose_button@3x.png */; };
 		BC3475E91D222B4700CA45FC /* ZJCustomCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3475E71D222B4700CA45FC /* ZJCustomCycleCell.swift */; };
 		BC3475EA1D222B4700CA45FC /* ZJCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3475E81D222B4700CA45FC /* ZJCycleScrollView.swift */; };
-		BC3475EE1D22629600CA45FC /* XTCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3475ED1D22629600CA45FC /* XTCollectionViewController.swift */; };
 		BC6B94501D23A67600EECCFF /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B944C1D23A67600EECCFF /* AlamofireViewController.swift */; };
 		BC6B94511D23A67600EECCFF /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B944D1D23A67600EECCFF /* ChartsViewController.swift */; };
 		BC6B94531D23A6BE00EECCFF /* AlamofireVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B94521D23A6BE00EECCFF /* AlamofireVCModel.swift */; };
 		BC6B94551D23B40F00EECCFF /* AlamofieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B94541D23B40F00EECCFF /* AlamofieCustomCell.swift */; };
+		BC6CA5EC1D24EDCE00AC7991 /* PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5EB1D24EDCE00AC7991 /* PopView.swift */; };
+		BC6CA5F41D24F56700AC7991 /* XTCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5F01D24F56700AC7991 /* XTCollectionViewController.swift */; };
+		BC6CA5F51D24F56700AC7991 /* XTSpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5F11D24F56700AC7991 /* XTSpringViewController.swift */; };
+		BC6CA5F71D24F59B00AC7991 /* XTCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5F61D24F59B00AC7991 /* XTCollectionViewFlowLayout.swift */; };
+		BC6CA5F91D24FBDF00AC7991 /* XTEvernoteTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5F81D24FBDF00AC7991 /* XTEvernoteTransition.swift */; };
+		BC6CA5FB1D24FCF100AC7991 /* XTNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5FA1D24FCF100AC7991 /* XTNoteViewController.swift */; };
+		BC6CA5FD1D24FE7000AC7991 /* XTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5FC1D24FE7000AC7991 /* XTCollectionViewCell.swift */; };
 		C93519A89D43BC6CF485262C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDABCA7355097C84E2EC7C1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,12 +101,18 @@
 		BC3475E21D22297A00CA45FC /* tabbar_compose_button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_compose_button@3x.png"; sourceTree = "<group>"; };
 		BC3475E71D222B4700CA45FC /* ZJCustomCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJCustomCycleCell.swift; sourceTree = "<group>"; };
 		BC3475E81D222B4700CA45FC /* ZJCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJCycleScrollView.swift; sourceTree = "<group>"; };
-		BC3475ED1D22629600CA45FC /* XTCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTCollectionViewController.swift; sourceTree = "<group>"; };
 		BC6B94441D23A36F00EECCFF /* DaybyDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaybyDay-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC6B944C1D23A67600EECCFF /* AlamofireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		BC6B944D1D23A67600EECCFF /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		BC6B94521D23A6BE00EECCFF /* AlamofireVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireVCModel.swift; sourceTree = "<group>"; };
 		BC6B94541D23B40F00EECCFF /* AlamofieCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofieCustomCell.swift; sourceTree = "<group>"; };
+		BC6CA5EB1D24EDCE00AC7991 /* PopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopView.swift; sourceTree = "<group>"; };
+		BC6CA5F01D24F56700AC7991 /* XTCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTCollectionViewController.swift; sourceTree = "<group>"; };
+		BC6CA5F11D24F56700AC7991 /* XTSpringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTSpringViewController.swift; sourceTree = "<group>"; };
+		BC6CA5F61D24F59B00AC7991 /* XTCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		BC6CA5F81D24FBDF00AC7991 /* XTEvernoteTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTEvernoteTransition.swift; sourceTree = "<group>"; };
+		BC6CA5FA1D24FCF100AC7991 /* XTNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTNoteViewController.swift; sourceTree = "<group>"; };
+		BC6CA5FC1D24FE7000AC7991 /* XTCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA0088D45B3D84815D356670 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +253,7 @@
 		BC3475E51D222AC400CA45FC /* ToolsClass */ = {
 			isa = PBXGroup;
 			children = (
+				BC6CA5EA1D24ED9400AC7991 /* PopView */,
 				BC3475E61D222B4700CA45FC /* CycleViewBySwift */,
 			);
 			path = ToolsClass;
@@ -258,7 +271,9 @@
 		BC3475EC1D22627800CA45FC /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				BC3475ED1D22629600CA45FC /* XTCollectionViewController.swift */,
+				BC6CA5EF1D24F56700AC7991 /* Controller */,
+				BC6CA5F21D24F56700AC7991 /* Model */,
+				BC6CA5F31D24F56700AC7991 /* View */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -294,6 +309,41 @@
 			isa = PBXGroup;
 			children = (
 				BC6B94541D23B40F00EECCFF /* AlamofieCustomCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC6CA5EA1D24ED9400AC7991 /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CA5EB1D24EDCE00AC7991 /* PopView.swift */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		BC6CA5EF1D24F56700AC7991 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CA5F01D24F56700AC7991 /* XTCollectionViewController.swift */,
+				BC6CA5F11D24F56700AC7991 /* XTSpringViewController.swift */,
+				BC6CA5FA1D24FCF100AC7991 /* XTNoteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC6CA5F21D24F56700AC7991 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CA5F81D24FBDF00AC7991 /* XTEvernoteTransition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC6CA5F31D24F56700AC7991 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CA5F61D24F59B00AC7991 /* XTCollectionViewFlowLayout.swift */,
+				BC6CA5FC1D24FE7000AC7991 /* XTCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,18 +544,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6CA5F41D24F56700AC7991 /* XTCollectionViewController.swift in Sources */,
 				BC3475EA1D222B4700CA45FC /* ZJCycleScrollView.swift in Sources */,
 				BC6B94511D23A67600EECCFF /* ChartsViewController.swift in Sources */,
 				BC3475941D22246800CA45FC /* ViewController.swift in Sources */,
+				BC6CA5FB1D24FCF100AC7991 /* XTNoteViewController.swift in Sources */,
 				BC6B94531D23A6BE00EECCFF /* AlamofireVCModel.swift in Sources */,
+				BC6CA5EC1D24EDCE00AC7991 /* PopView.swift in Sources */,
 				BC3475E91D222B4700CA45FC /* ZJCustomCycleCell.swift in Sources */,
+				BC6CA5FD1D24FE7000AC7991 /* XTCollectionViewCell.swift in Sources */,
 				BC3475C31D2226C600CA45FC /* XTHomeViewController.swift in Sources */,
+				BC6CA5F71D24F59B00AC7991 /* XTCollectionViewFlowLayout.swift in Sources */,
 				BC3475C11D2226B000CA45FC /* RootTabBarController.swift in Sources */,
 				BC6B94501D23A67600EECCFF /* AlamofireViewController.swift in Sources */,
+				BC6CA5F51D24F56700AC7991 /* XTSpringViewController.swift in Sources */,
+				BC6CA5F91D24FBDF00AC7991 /* XTEvernoteTransition.swift in Sources */,
 				BC3475C71D2226EA00CA45FC /* XTOtherViewController.swift in Sources */,
 				BC6B94551D23B40F00EECCFF /* AlamofieCustomCell.swift in Sources */,
 				BC3475C51D2226DD00CA45FC /* XTCustomTabbarViewController.swift in Sources */,
-				BC3475EE1D22629600CA45FC /* XTCollectionViewController.swift in Sources */,
 				BC3475921D22246800CA45FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
