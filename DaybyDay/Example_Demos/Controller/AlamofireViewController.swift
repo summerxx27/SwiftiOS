@@ -36,7 +36,9 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
         tableView = UITableView.init(frame: self.view.bounds, style: UITableViewStyle.Plain)
         tableView.delegate = self;
         tableView.dataSource = self;
-        tableView.registerClass(AlamofieCustomCell.self, forCellReuseIdentifier: cellIdentidier)
+//        tableView.registerClass(AlamofieCustomCell.self, forCellReuseIdentifier: cellIdentidier)
+        tableView.registerNib(UINib(nibName:"XTTestTableViewCell", bundle:nil),
+                                    forCellReuseIdentifier:"myCell")
         self.view.addSubview(tableView)
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -49,9 +51,11 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
         return 188
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentidier) as! AlamofieCustomCell
+//        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentidier) as! AlamofieCustomCell
+        let cell:XTTestTableViewCell = tableView.dequeueReusableCellWithIdentifier("myCell")
+            as! XTTestTableViewCell
         let model = self.dataArray[indexPath.row] as! AlamofireVCModel
-        cell.alaModel = model
+        cell.labelText.text = model.title
         
         return cell
     }
