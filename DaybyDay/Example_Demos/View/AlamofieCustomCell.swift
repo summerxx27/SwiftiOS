@@ -31,6 +31,7 @@ class AlamofieCustomCell: UITableViewCell {
         imagePic.addSubview(labelTitle)
     }
     override func layoutSubviews() {
+        super.layoutSubviews()
         if (self.alaModel.pic != nil && self.alaModel.pic?.hasSuffix("gif") != nil){
             self.imagePic.hnk_setImageFromURL(NSURL.init(string: (self.alaModel.pic?.substringToIndex((self.alaModel.pic?.startIndex.advancedBy(66))!))!)!)
         }
