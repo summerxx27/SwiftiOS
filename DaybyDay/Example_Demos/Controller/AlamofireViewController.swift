@@ -37,6 +37,7 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.registerClass(AlamofieCustomCell.self, forCellReuseIdentifier: cellIdentidier)
+//        tableView.registerNib(UINib(nibName:"XTTestTableViewCell", bundle:nil),forCellReuseIdentifier:cellIdentidier) // XIB
         self.view.addSubview(tableView)
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -50,7 +51,10 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentidier) as! AlamofieCustomCell
+//        let cell:XTTestTableViewCell = tableView.dequeueReusableCellWithIdentifier(cellIdentidier)
+//            as! XTTestTableViewCell // XIB
         let model = self.dataArray[indexPath.row] as! AlamofireVCModel
+
         // 指定代理人
         if #available(iOS 9.0, *) {
             self.registerForPreviewingWithDelegate(self, sourceView: cell)
@@ -58,6 +62,7 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
             // Fallback on earlier versions
         }
         cell.alaModel = model
+        cell.labelTitle.text = model.title
         return cell
     }
     func XTNetworkReq1(url: String){
