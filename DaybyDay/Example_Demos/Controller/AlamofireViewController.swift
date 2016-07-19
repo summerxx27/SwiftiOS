@@ -14,7 +14,7 @@ let s_w = UIScreen.mainScreen().bounds.width
 let s_h = UIScreen.mainScreen().bounds.height
 
 let cellIdentidier = "cellId"
-class AlamofireViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AlamofireViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIViewControllerPreviewingDelegate {
 
     var dataArray = NSArray()
     var tableView = UITableView()
@@ -51,8 +51,13 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentidier) as! AlamofieCustomCell
         let model = self.dataArray[indexPath.row] as! AlamofireVCModel
+        // 指定代理人
+        if #available(iOS 9.0, *) {
+            self.registerForPreviewingWithDelegate(self, sourceView: cell)
+        } else {
+            // Fallback on earlier versions
+        }
         cell.alaModel = model
-        
         return cell
     }
     func XTNetworkReq1(url: String){
@@ -80,6 +85,23 @@ class AlamofireViewController: UIViewController, UITableViewDataSource, UITableV
                 }
         }
     }
+    /// MARK: - peek的代理方法, 长按触发弹出预览VC
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        let preVC = PreviewViewController()
+        if #available(iOS 9.0, *) {
+            let indexPath = self.tableView.indexPathForCell((previewingContext.sourceView) as! AlamofieCustomCell)! as NSIndexPath
+            preVC.preViewModel = self.dataArray[indexPath.row] as! AlamofireVCModel
+        } else {
+            // Fallback on earlier versions
+        }
+        return preVC
+    }
+    /// MARK: - pop的代理方法，在此处可对将要进入的vc进行处理
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        // code
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

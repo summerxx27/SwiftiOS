@@ -38,7 +38,9 @@ class XTCollectionViewController: UIViewController, UITableViewDataSource, UITab
         switch index {
         case 0:
             let vc = XTSpringViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
+            self .presentViewController(vc, animated: true, completion: { 
+                // 
+            })
         default:
             break
         }

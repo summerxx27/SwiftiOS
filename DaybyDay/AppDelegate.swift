@@ -17,11 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-//        let tb = RootTabBarController()
-//        self.window?.rootViewController = tb
-        
-        let root = XTSpringViewController()
-        self.window?.rootViewController = root
+        let tb = RootTabBarController()
+        self.window?.rootViewController = tb
         
         return true
     }

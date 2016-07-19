@@ -22,7 +22,7 @@ class AlamofieCustomCell: UITableViewCell {
     }
     
     func createCellSubviews(){
-        imagePic = UIImageView.init(frame: CGRectMake(5, 5, self.contentView.frame.size.width - 10, 188 - 10))
+        imagePic = UIImageView.init(frame: CGRectMake(5, 5, s_w - 10, 188 - 10))
         self.contentView.addSubview(imagePic)
         
         labelTitle = UILabel.init(frame: CGRectMake(10, 10, s_w, 60))

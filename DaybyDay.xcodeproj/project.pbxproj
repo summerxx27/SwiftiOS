@@ -45,6 +45,7 @@
 		BC6CA5F91D24FBDF00AC7991 /* XTEvernoteTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5F81D24FBDF00AC7991 /* XTEvernoteTransition.swift */; };
 		BC6CA5FB1D24FCF100AC7991 /* XTNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5FA1D24FCF100AC7991 /* XTNoteViewController.swift */; };
 		BC6CA5FD1D24FE7000AC7991 /* XTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA5FC1D24FE7000AC7991 /* XTCollectionViewCell.swift */; };
+		BC7D63971D3DBE3800D0DABD /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D63961D3DBE3800D0DABD /* PreviewViewController.swift */; };
 		C93519A89D43BC6CF485262C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDABCA7355097C84E2EC7C1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		BC6CA5F81D24FBDF00AC7991 /* XTEvernoteTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTEvernoteTransition.swift; sourceTree = "<group>"; };
 		BC6CA5FA1D24FCF100AC7991 /* XTNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTNoteViewController.swift; sourceTree = "<group>"; };
 		BC6CA5FC1D24FE7000AC7991 /* XTCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC7D63961D3DBE3800D0DABD /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		DA0088D45B3D84815D356670 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		BC3475901D22246800CA45FC /* DaybyDay */ = {
 			isa = PBXGroup;
 			children = (
+				BC8FF1C81D38810E00302D70 /* NetworkTools */,
 				BC3475BF1D2225F700CA45FC /* TabbarViewControllers */,
 				BC3475F21D2273B900CA45FC /* Example_Demos */,
 				BC3475EC1D22627800CA45FC /* UICollectionView */,
@@ -293,6 +296,7 @@
 			children = (
 				BC6B944C1D23A67600EECCFF /* AlamofireViewController.swift */,
 				BC6B944D1D23A67600EECCFF /* ChartsViewController.swift */,
+				BC7D63961D3DBE3800D0DABD /* PreviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +350,13 @@
 				BC6CA5FC1D24FE7000AC7991 /* XTCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BC8FF1C81D38810E00302D70 /* NetworkTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +558,7 @@
 				BC6CA5F41D24F56700AC7991 /* XTCollectionViewController.swift in Sources */,
 				BC3475EA1D222B4700CA45FC /* ZJCycleScrollView.swift in Sources */,
 				BC6B94511D23A67600EECCFF /* ChartsViewController.swift in Sources */,
+				BC7D63971D3DBE3800D0DABD /* PreviewViewController.swift in Sources */,
 				BC3475941D22246800CA45FC /* ViewController.swift in Sources */,
 				BC6CA5FB1D24FCF100AC7991 /* XTNoteViewController.swift in Sources */,
 				BC6B94531D23A6BE00EECCFF /* AlamofireVCModel.swift in Sources */,

@@ -45,6 +45,7 @@ class XTSpringViewController: UIViewController, UICollectionViewDataSource, UICo
         return colorArray.count
     }
     
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
@@ -53,9 +54,6 @@ class XTSpringViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as! XTCollectionViewCell
         cell.backgroundColor = colorArray.objectAtIndex(colorArray.count - 1 - indexPath.section) as? UIColor
         cell.titleLabel.text = "Notebook + " + String(indexPath.section + 1)
-//        cell.titleLine.alpha = 0.0
-//        cell.textView.alpha = 0.0
-//        cell.backButton.alpha = 0.0
         cell.tag = indexPath.section
         return cell
     }
